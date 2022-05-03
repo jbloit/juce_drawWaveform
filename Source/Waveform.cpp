@@ -15,7 +15,7 @@
 Waveform::Waveform()
 {
     afm.registerBasicFormats();
-    thumbnail.reset( new AudioThumbnailBars(44100, afm , thumbnailCache) );
+    thumbnail.reset( new AudioThumbnailBars(512, afm , thumbnailCache) );
 
     thumbnail->addChangeListener(this);
 
@@ -48,12 +48,12 @@ void Waveform::paint (juce::Graphics& g)
        drawing code..
     */
 
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));   // clear the background
+    g.fillAll (juce::Colours::black);   // clear the background
 
-    g.setColour (juce::Colours::grey);
+    g.setColour (juce::Colours::black);
     g.drawRect (getLocalBounds(), 1);   // draw an outline around the component
 
-    g.setColour (juce::Colours::white);
+    g.setColour (juce::Colours::orangered);
 
     thumbnail->drawChannels (g, getLocalBounds(),0.0, thumbnail->getTotalLength(), 1.0f);
 }

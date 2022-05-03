@@ -378,21 +378,24 @@
 
                     auto x = (float) clip.getX();
 
+                    int skipStep = 5;
+                    int skipCount = 0;
                     for (int w = clip.getWidth(); --w >= 0;)
                     {
-                        if (cacheData->isNonZero())
+                        if (cacheData->isNonZero() && skipCount < 1)
                         {
                             auto top    = juce::jmax (midY - cacheData->getMaxValue() * vscale - 0.3f, topY);
                             auto bottom = juce::jmin (midY - cacheData->getMinValue() * vscale + 0.3f, bottomY);
 
-                            waveform.addWithoutMerging (juce::Rectangle<float> (x, top, 1.0f, bottom - top));
+                            waveform.addWithoutMerging (juce::Rectangle<float> (x, top, 1.5f, bottom - top));
                         }
 
+                        ++skipCount;
+                        skipCount = skipCount % skipStep;
                         x += 1.0f;
                         ++cacheData;
                     }
 
-                    g.setColour(juce::Colours::red);
                     g.fillRectList (waveform);
                 }
             }
