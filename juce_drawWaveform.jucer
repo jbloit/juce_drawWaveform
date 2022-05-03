@@ -4,6 +4,10 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="bmxBD1" name="juce_drawWaveform">
     <GROUP id="{A7C9E483-072A-577A-392C-BF264C616928}" name="Source">
+      <FILE id="ffLtz9" name="AudioThumbnailBars.cpp" compile="1" resource="0"
+            file="Source/AudioThumbnailBars.cpp"/>
+      <FILE id="dKCtpG" name="AudioThumbnailBars.h" compile="0" resource="0"
+            file="Source/AudioThumbnailBars.h"/>
       <FILE id="hqipz2" name="Waveform.cpp" compile="1" resource="0" file="Source/Waveform.cpp"/>
       <FILE id="BvLC5t" name="Waveform.h" compile="0" resource="0" file="Source/Waveform.h"/>
       <FILE id="LYxc2Z" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>

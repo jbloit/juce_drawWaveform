@@ -11,6 +11,7 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "AudioThumbnailBars.h"
 
 //==============================================================================
 /*
@@ -28,7 +29,7 @@ private:
 
     juce::AudioFormatManager afm;
     juce::AudioThumbnailCache thumbnailCache  { 5 };
-    std::unique_ptr<juce::AudioThumbnail> thumbnail;
+    std::unique_ptr<AudioThumbnailBars> thumbnail;
     juce::File audioFile;
     void changeListenerCallback (juce::ChangeBroadcaster* source) override;
 

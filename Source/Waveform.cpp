@@ -15,7 +15,7 @@
 Waveform::Waveform()
 {
     afm.registerBasicFormats();
-    thumbnail.reset( new juce::AudioThumbnail(44100, afm , thumbnailCache) );
+    thumbnail.reset( new AudioThumbnailBars(44100, afm , thumbnailCache) );
 
     thumbnail->addChangeListener(this);
 
