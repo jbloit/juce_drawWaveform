@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="ekLsJo" name="juce_drawWaveform" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="bmxBD1" name="juce_drawWaveform">
+    <GROUP id="{A7C9E483-072A-577A-392C-BF264C616928}" name="Source">
+      <FILE id="hqipz2" name="Waveform.cpp" compile="1" resource="0" file="Source/Waveform.cpp"/>
+      <FILE id="BvLC5t" name="Waveform.h" compile="0" resource="0" file="Source/Waveform.h"/>
+      <FILE id="LYxc2Z" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="EWfq0r" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="TdLKQs" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+    <GROUP id="{FE967E5E-F567-EC3F-3823-DF118643ADB4}" name="assets">
+      <FILE id="fRUsU7" name="countdown.ogg" compile="0" resource="1" file="assets/countdown.ogg"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_USE_OGGVORBIS="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="juce_drawWaveform"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="juce_drawWaveform"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../projects/beatsurfing2/BeatSurfing2/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
